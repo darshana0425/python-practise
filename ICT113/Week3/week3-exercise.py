@@ -4,8 +4,7 @@
 
 def main():
     # ...
-    infile = open("students.txt", "r");
-    # ... 
+    infile = open("students.txt", "r")   
     print("{:10}{:10}{:20}{:20}".format("First","Last","City","Email"))
     print("{}".format("-"*60)) 
 

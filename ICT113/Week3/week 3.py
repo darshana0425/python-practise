@@ -1,3 +1,4 @@
+
 def man():
     a= "My_Name"
     for i in range(len(a)):
@@ -10,12 +11,10 @@ def abc():
     print (a)
 
 
-
 # program to read and display a text file
 def main():
     # open the file for reading
-    infile = open("students.txt", 'r');
-    #read the file a line at a time
+    infile = open("ICT113/Week3/students.txt", "r")    #read the file a line at a time
     for line in infile:
         # display the line
         print (line)
@@ -23,7 +22,7 @@ def main():
     infile.close()
     print ('a' not in "basd")
 
-main();
+main()
 
 import math 
 
