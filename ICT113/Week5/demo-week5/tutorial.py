@@ -72,11 +72,27 @@ summary report."""
 Use a for loop to ask the user to enter the price of 5 items. For each item price:
 a. If the price is greater than 0:
 i. If the price is $50 or less, print “Affordable” and count it
-3 | P a g e
 ii. Otherwise, print “Too expensive”
 b. If the price is invalid (0 or negative), print “Invalid price” and use continue
 c. After all prices are entered, print the total number of affordable items.
 """
+def check():
+    affordable_count = 0
+    for i in range(5):
+        price = float(input("Enter the price of item {}: ".format(i + 1)))
+        if price > 0:
+            if price <= 50:
+                print("Affordable")
+                affordable_count += 1
+            else:
+                print("Too expensive")
+        else:
+            print("Invalid price")
+            continue
+    print("Total number of affordable items:", affordable_count)
+
+#check()
+
 
 
 
@@ -94,3 +110,25 @@ iv. 50–59 → P
 v. Below 50 → F
 b. Print the grade
 c) If the mark is invalid (less than 0 or greater than 100), use continue to skip grading."""
+
+def grade():
+    while True:
+        mark = int(input("Enter the student's mark (-1 to exit): "))
+        if mark == -1:
+            break
+        elif 0 <= mark <= 100:
+            if mark >= 80:
+                print("Grade: HD")
+            elif 70 <= mark < 80:
+                print("Grade: D")
+            elif 60 <= mark < 70:
+                print("Grade: C")
+            elif 50 <= mark < 60:
+                print("Grade: P")
+            else:
+                print("Grade: F")
+        else:
+            print("Invalid mark. Please enter a value between 0 and 100.")
+            continue
+
+#grade()
