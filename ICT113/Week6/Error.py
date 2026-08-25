@@ -17,7 +17,12 @@ except ZeroDivisionError:
 try:
     mun = int(input("Enter a number: "))
     result = 10 / mun
-    print("Result:", result)
+    a= 3
+    b = 75
 except (ValueError,ZeroDivisionError) as e:
-    print ("Error", e)
+    print(f"Error: {e}")
+else:
+    print(f"No error occurred. The result is: {result}")
+    print("No error occurred. The result is: {}{}{}".format(result, a, b))
+
 
