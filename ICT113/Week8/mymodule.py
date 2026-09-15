@@ -1,4 +1,10 @@
 def greeting(name):
     print ("Hello," + name)
 
-#greeting("Alice")
+person1 ={"name": "Alina","age": 20,  "country": "Nepal"}
+person2 ={"name": "Darshana","age": 21,  "country": "Norway"}
+
+
+
+
+
